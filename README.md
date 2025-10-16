@@ -3,7 +3,7 @@ works in text console and with KlipperScren
 
 Desktop not tested yet.
 
-#Install:
+# Install:
 
 sudo apt install git
 
