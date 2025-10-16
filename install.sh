@@ -7,7 +7,7 @@ sudo cp -rf 99-fbturbo.~ /usr/share/X11/xorg.conf.d/99-fbturbo.~
 sudo cp -rf config.txt /boot/firmware/config.txt
 sudo cp -rf cmdline.txt /boot/firmware/cmdline.txt
 sudo cp -rf rc.local /etc/rc.local
-echo "Now reebot for changes to take effect.."
+echo "Now reboot for changes to take effect.."
 
 
 
