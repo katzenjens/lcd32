@@ -1,4 +1,4 @@
-## Waveshare 3.2 TFT (and clones) driver for Raspberry 3 Debian 13 Trixie
+## Waveshare 3.2 / 3.5 inch TFT (and clones) driver for Raspberry 3 Debian 13 Trixie
 works in text console and with KlipperScreen
 
 Desktop not tested yet.
