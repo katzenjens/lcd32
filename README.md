@@ -11,7 +11,7 @@ sudo apt install git
 git clone https://github.com/katzenjens/lcd32.git
 
 cd lcd32
-## for 3.2 inch tft:
+## for 3.2 or 2.8 inch tft:
 ./install.sh
 
 ## for 3.5 inch tft:
