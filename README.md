@@ -1,4 +1,4 @@
-# Waveshare 3.2 / 3.5 inch TFT (and clones) driver 
+# Waveshare 3.2 / 3.5 inch TFT GPIO (and clones) driver 
 # for Raspberry PI Zero to 4 under Debian 13 Trixie
 works in text console, desktop and KlipperScreen.
 
