@@ -2,7 +2,7 @@
 # for Raspberry PI Zero to 4 under Debian 13 Trixie
 works in text console, desktop and KlipperScreen.
 
-Will probably not work with Raspberry PI 5.
+Tested on PI 1 to PI 5, including Zero W and Zero2 W.
 
 ## Install:
 
