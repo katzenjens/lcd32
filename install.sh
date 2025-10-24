@@ -27,6 +27,8 @@ sudo cp -rf waveshare32b.dtbo /boot/overlays/waveshare32b.dtbo
 sudo cp -rf 99-fbdev.conf /usr/share/X11/xorg.conf.d/99-fbdev.conf
 sudo cp -rf 45-evdev.conf /usr/share/X11/xorg.conf.d/45-evdev.conf
 sudo cp -rf 99-calibration.conf /usr/share/X11/xorg.conf.d/99-calibration.conf
+sudo cp -rf 20-noglamor.conf /usr/share/X11/xorg.conf.d/20-noglamor.conf
+sudo chmod 444 /usr/share/X11/xorg.conf.d/20-noglamor.conf
 sudo cp -rf config.txt /boot/firmware/config.txt
 sudo cp -rf cmdline.txt /boot/firmware/cmdline.txt
 sudo cp -rf rc.local /etc/rc.local
