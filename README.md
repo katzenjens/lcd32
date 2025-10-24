@@ -6,7 +6,7 @@ Tested on Pi 1 to Pi 5, including Zero W and Zero2 W.
 
 ## Install:
 
-'sudo apt install git'
+`sudo apt install git`
 
 'git clone https://github.com/katzenjens/lcd32.git'
 
