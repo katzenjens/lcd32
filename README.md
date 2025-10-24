@@ -11,10 +11,10 @@ Tested on Pi 1 to Pi 5, including Zero W and Zero2 W.
 `git clone https://github.com/katzenjens/lcd32.git`
 
 `cd lcd32`
-## for 3.2 or 2.8 inch tft:
+## for 3.2 or 2.8 inch tft (320 x 240 px):
 `./install.sh`
 
-## for 3.5 inch tft:
+## for 3.5 inch tft (480 x 320 px):
 `./install35.sh`
 
 ## restore to defaults
