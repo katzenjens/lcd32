@@ -6,17 +6,17 @@ Tested on Pi 1 to Pi 5, including Zero W and Zero2 W.
 
 ## Install:
 
-sudo apt install git
+'sudo apt install git'
 
-git clone https://github.com/katzenjens/lcd32.git
+'git clone https://github.com/katzenjens/lcd32.git'
 
-cd lcd32
+'cd lcd32'
 ## for 3.2 or 2.8 inch tft:
-./install.sh
+'./install.sh'
 
 ## for 3.5 inch tft:
-./install35.sh
+'./install35.sh'
 
-## to restore to defaults
-./restore.sh
+## restore to defaults
+'./restore.sh'
 
