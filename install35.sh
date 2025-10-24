@@ -1,6 +1,6 @@
 #First, backup standard configs
 TARGET_DIR="./backup"
-FILES_TO_COPY=("/boot/firmware/cmdline.txt" "/boot/firmware/config.txt" "/etc/rc.local")
+FILES_TO_COPY=("/boot/firmware/cmdline.txt" "/boot/firmware/config.txt" "/etc/rc.local" "/etc/default/console-setup")
 
 # target dir present?
 if [ -d "$TARGET_DIR" ]; then
