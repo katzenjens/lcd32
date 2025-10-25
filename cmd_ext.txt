@@ -1,0 +1,1 @@
+ fbcon=map:10 fbcon=font:ProFont6x11
