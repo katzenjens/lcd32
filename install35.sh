@@ -30,7 +30,8 @@ sudo cp -rf 99-calibration.conf /usr/share/X11/xorg.conf.d/99-calibration.conf
 sudo cp -rf 20-noglamor.conf /usr/share/X11/xorg.conf.d/20-noglamor.conf
 sudo chmod 444 /usr/share/X11/xorg.conf.d/20-noglamor.conf
 sudo cp -rf config35.txt /boot/firmware/config.txt
-sudo cp -rf cmdline.txt /boot/firmware/cmdline.txt
+cat /boot/firmware/cmdline.txt cmd_ext.txt > cmdline2.txt
+sudo cp -rf cmdline2.txt /boot/firmware/cmdline.txt
 sudo cp -rf rc.local /etc/rc.local
 sudo cp -rf console-setup /etc/default/console-setup
 echo "Now reboot for changes to take effect.."
