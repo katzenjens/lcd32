@@ -8,7 +8,7 @@ Tested on Pi 1 to Pi 5, including Zero W and Zero2 W.
 <br>Update the system<br>
 `sudo apt update && sudo apt upgrade -y`<br>
 Modify the settings to your taste with `sudo raspi-config`<br>
-If you are using the desktop, remember to set **boot to comand line** in raspi-config. Desktop autostart does not work at the moment. Start the desktop with `startx` as user pi, not root! A quick'ndirty solution for desktop autostart, add **startx** to the end of **/home/pi/.bashrc**
+If you are using the desktop, remember to set **boot to comand line** in raspi-config. Desktop autostart does not work at the moment. Start the desktop with `startx` as user pi, not root! A quick'n'dirty solution for desktop autostart, add **startx** to the end of **/home/pi/.bashrc**
 
 ## Install
 `sudo apt install git`
