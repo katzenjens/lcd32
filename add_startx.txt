@@ -1,0 +1,5 @@
+# desktop autostart
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+startx
+fi
+#end desktop autostart
