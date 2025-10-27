@@ -8,7 +8,7 @@ Tested on Pi 1 to Pi 5, including Zero W and Zero2 W.
 <br>Update the system<br>
 `sudo apt update && sudo apt upgrade -y`<br>
 Modify the settings to your taste with `sudo raspi-config`<br>
-If you are using the desktop, remember to set **boot to comand line** in raspi-config. Desktop autostart does not work at this moment. Start the desktop with `startx` as user pi, not root! After that, you may select "boot to Desktop" inside the config menu.<br>
+If you are using the desktop, remember to set **boot to comand line** in raspi-config. Desktop autostart does not work at this moment. Start the desktop with `startx` as user pi, not root! After that, you may select "boot to Desktop" inside the config menu. If this does not work for you, look under [Issues](https://github.com/katzenjens/lcd32/edit/main/README.md#issues) for a workaround.<br>
 
 ## Install
 `sudo apt install git`
@@ -24,3 +24,7 @@ If you are using the desktop, remember to set **boot to comand line** in raspi-c
 
 ## restore to defaults
 `./restore.sh`
+
+# Issues:
+## Desktop Autostart not working:
+On some older Pi's I had issues booting to desktop. So I started with autoboot into command line. You can start the desktop from there with startx which sometimes is not practical. So I included a little snippet for .profile for the user pi. On the command line, type <br>`cat add_startx.txt >> .profile`<br> to include startx at startup. 
