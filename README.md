@@ -27,7 +27,7 @@ Wayland does not work! You have to select X11. If you are using the desktop, rem
 
 # Issues:
 ## Desktop Autostart not working:
-On some older Pi's I had issues booting to desktop. So I started with autoboot into command line. You can start the desktop from there with startx which sometimes is not practical. So I included a little snippet for .profile for the user pi. On the command line, type <br>`cat add_startx.txt >> ~/.profile`<br> to include startx at startup.
+On some older Pi's I had issues booting to desktop. So I started with autoboot into command line. You can start the desktop from there with startx which sometimes is not practical. So I included a little snippet for .profile for the user pi. On the command line while in the lcd32 directory, type <br>`cat add_startx.txt >> ~/.profile`<br> to include startx at startup.
 
 ## 320 x 240 px 2.4 and 2.8 inch tft
 Desktop is not recommended for these type of displays since some windows are not fully accessible. Not even setting defaults for small displays. Bummer...
