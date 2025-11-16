@@ -37,8 +37,8 @@ Display rotation can be found here: `/boot/firmware/config.txt`<br>
 For 3,5 inch display<br>
 `dtoverlay=waveshare35a:rotate=0`  Portrait<br>
 `dtoverlay=waveshare35a:rotate=90` Landscape<br>
-`dtoverlay=waveshare35a:rotate=90` Inverted Portrait<br>
-`dtoverlay=waveshare35a:rotate=90` Inverted Landscape<br>
+`dtoverlay=waveshare35a:rotate=180` Inverted Portrait<br>
+`dtoverlay=waveshare35a:rotate=270` Inverted Landscape<br>
 Touchscreen Rotation can be found here: `/usr/share/X11/xorg.conf.d/40-libinput.conf`<br>
 Inside the file search for `Identifier "libinput touchpad catchall"`
 and add a line<br>
