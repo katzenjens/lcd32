@@ -33,13 +33,13 @@ On some older Pi's I had issues booting to desktop. So I started with autoboot i
 Desktop is not recommended for these type of displays since some windows are not fully accessible. Not even setting defaults for small displays. Bummer...
 
 ## Display and Touchscreen Rotation
-Display rotation is inside `/boot/firmware/config.txt`<br>
+Display rotation can be found here: `/boot/firmware/config.txt`<br>
 For 3,5 inch display<br>
-`dtoverlay=waveshare35a:rotate=0`  Portrait
-`dtoverlay=waveshare35a:rotate=90` Landscape
-`dtoverlay=waveshare35a:rotate=90` Inverted Portrait
-`dtoverlay=waveshare35a:rotate=90` Inverted Landscape
-Touchscreen Rotation is inside `/usr/share/X11/xorg.conf.d/40-libinput.conf`<br>
+`dtoverlay=waveshare35a:rotate=0`  Portrait<br>
+`dtoverlay=waveshare35a:rotate=90` Landscape<br>
+`dtoverlay=waveshare35a:rotate=90` Inverted Portrait<br>
+`dtoverlay=waveshare35a:rotate=90` Inverted Landscape<br>
+Touchscreen Rotation can be found here: `/usr/share/X11/xorg.conf.d/40-libinput.conf`<br>
 Inside the file search for `Identifier "libinput touchpad catchall"`
 and add a line<br>
 `Option "TransformationMatrix" "0 -1 1 1 0 0 0 0 1"` <br>to rotate 90°<br>
