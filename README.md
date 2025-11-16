@@ -42,10 +42,10 @@ For 3,5 inch display<br>
 Touchscreen Rotation is inside `/usr/share/X11/xorg.conf.d/40-libinput.conf`<br>
 Inside the file search for `Identifier "libinput touchpad catchall"`
 and add a line<br>
-`Option "TransformationMatrix" "0 -1 1 1 0 0 0 0 1"` rotate 90°<br>
+`Option "TransformationMatrix" "0 -1 1 1 0 0 0 0 1"` <br>to rotate 90°<br>
 or<br>
-`Option "TransformationMatrix" "-1 0 1 0 -1 1 0 0 1"`rotate 180°<br>
+`Option "TransformationMatrix" "-1 0 1 0 -1 1 0 0 1"`<br>torotate 180°<br>
 or<br>
-`Option "TransformationMatrix" "0 1 0 -1 0 1 0 0 1"` rotate 270°<br>
+`Option "TransformationMatrix" "0 1 0 -1 0 1 0 0 1"` <br>rotate 270°<br>
 
 For 2,4 to 3,2 inch displays (320x240) try similar tweaks. Your mileage may vary since sometimes displays are orientated landscape or portrait. Try the tweaks above until everything works.
