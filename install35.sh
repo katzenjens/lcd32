@@ -33,6 +33,7 @@ sudo cp -rf config35.txt /boot/firmware/config.txt
 cat /boot/firmware/cmdline.txt cmd_ext.txt > cmdline2.txt
 sudo cp -rf cmdline2.txt /boot/firmware/cmdline.txt
 sudo cp -rf rc.local /etc/rc.local
+sudo chmod 655 /etc/rc.local
 sudo cp -rf console-setup /etc/default/console-setup
 echo "Now reboot for changes to take effect.."
 
