@@ -49,3 +49,16 @@ or<br>
 `Option "TransformationMatrix" "0 1 0 -1 0 1 0 0 1"` <br>to rotate 270°<br>
 
 For 2,4 to 3,2 inch displays (320x240) try similar tweaks. Your mileage may vary since sometimes displays are orientated landscape or portrait. Try the tweaks above until everything works.
+
+---------
+## Subpixel issue
+User blu006 has a solution in case display rotation in desktop mode does not work accordingly:
+
+Subpixel rendering is different when the display is rotated.  I have tested this with the display rotated `180`.
+
+in the file `~/.config/lxsession/rpd-x/desktop.conf`
+
+I assume subpixel rendering should be the default `sXft/RGBA=rgb` at `0`
+`sXft/RGBA=vrgb` at `90` ?
+`sXft/RGBA=bgr` at `180` (tested)
+and `sXft/RGBA=vbgr` at `270`?
