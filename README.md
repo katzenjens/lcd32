@@ -5,29 +5,42 @@ Tested on Pi 1 to Pi 5, including Zero W and Zero2 W.
 ## Prequisites:
 
 [Install the latest image via Raspberry Pi Imager](https://www.raspberrypi.com/software/)
-<br>Update the system<br>
-`sudo apt update && sudo apt upgrade -y`<br>
+<br>Update the system
+```sh
+sudo apt update && sudo apt upgrade -y
+```
 Modify the settings to your taste with `sudo raspi-config`<br>
-Wayland does not work! You have to select X11. If you are using the desktop, remember to set **boot to comand line** in raspi-config. Desktop autostart does not work at this moment. Start the desktop with `startx` as user pi, not root! After that, you may select "boot to Desktop" inside the config menu. If this does not work for you, look under [Issues](#issues) for a workaround.<br>
+> Wayland does not work! You have to select X11. If you are using the desktop, remember to set **boot to command line** in `raspi-config`. Desktop autostart does not work at this moment. Start the desktop with `startx` as user `pi`, not `root`! After that, you may select **boot to Desktop** inside the config menu. If this does not work for you, look under [Issues](#issues) for a workaround.
 
 ## Install
-`sudo apt install git`
+```sh
+sudo apt install git
+git clone https://github.com/katzenjens/lcd32.git
+cd lcd32
+```
 
-`git clone https://github.com/katzenjens/lcd32.git`
-
-`cd lcd32`
 ## for 3.2 or 2.8 inch tft (320 x 240 px):
-`./install.sh`
+```sh
+./install.sh
+```
 
 ## for 3.5 inch tft (480 x 320 px):
-`./install35.sh`
+```sh
+./install35.sh
+```
 
 ## restore to defaults
-`./restore.sh`
+```sh
+./restore.sh
+```
 
 # Issues:
 ## Desktop Autostart not working:
-On some older Pi's I had issues booting to desktop. So I started with autoboot into command line. You can start the desktop from there with startx which sometimes is not practical. So I included a little snippet for .profile for the user pi. On the command line while in the lcd32 directory, type <br>`cat add_startx.txt >> ~/.profile`<br> to include startx at startup.
+On some older Pi's I had issues booting to desktop. So I started with autoboot into command line. You can start the desktop from there with `startx` which sometimes is not practical. So I included a little snippet for .profile for the user pi. On the command line while in the `lcd32` directory, type
+```sh
+cat add_startx.txt >> ~/.profile
+```
+to include startx at startup.
 
 ## 320 x 240 px 2.4 and 2.8 inch tft
 Desktop is not recommended for these type of displays since some windows are not fully accessible. Not even setting defaults for small displays. Bummer...
@@ -52,7 +65,7 @@ For 2,4 to 3,2 inch displays (320x240) try similar tweaks. Your mileage may vary
 
 ---------
 ## Subpixel issue
-User blu006 has a solution in case display rotation in desktop mode does not work accordingly:
+User `blu006` has a solution in case display rotation in desktop mode does not work accordingly:
 
 Subpixel rendering is different when the display is rotated.  I have tested this with the display rotated `180`.
 
